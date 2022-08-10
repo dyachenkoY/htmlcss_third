@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.cardholder {
+    width: 100vw;
+    text-align: center;
+    margin-top: 30vh;
+}
+
+.card {
+    position: relative;
+    display: inline-block;
+    border: 2px solid black;
+    margin: 20px;
+    padding: 140px 280px;
+    border-radius: 10px;
+    color: white;
+}
+
+.card_title {
+    position: absolute;
+    top: 60px;
+    left: 60px;
+    font-size: 25px;
+}
+
+.card_price {
+    position: absolute;
+    top: 110px;
+    left: 60px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.card_prop {
+    position: absolute;
+    top: 200px;
+    left: 60px;
+    font-size: 25px;
+}
+
+.card_red {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(236,203,140,1) 0%, rgba(227,165,45,1) 24%, rgba(254,126,188,1) 100%);
+}
+
+.card_blue {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(140,176,236,1) 0%, rgba(45,110,227,1) 75%, rgba(51,113,252,1) 100%);
+}
+
+.card_green {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(50,156,114,1) 0%, rgba(0,142,76,1) 26%, rgba(22,227,22,1) 94%);
+}
+
+.card_icon {
+    position: absolute;
+    width: 30px;
+    top: 50px;
+    right: 40px;
+    fill: white;
+}
+
+.card::after {
+    content: '';
+    position: absolute;
+    right: -50px;
+    padding: 150px;
+    border-radius: 150px;
+    background-color: white;
+    opacity: 0.2;
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    bottom: 90px;
+    right: -120px;
+    padding: 150px;
+    border-radius: 150px;
+    background-color: white;
+    opacity: 0.2;
+}
