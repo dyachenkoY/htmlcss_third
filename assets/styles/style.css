@@ -15,6 +15,7 @@
     border: 2px solid black;
     margin: 20px;
     width: 564px;
+    padding: 50px;
     border-radius: 10px;
     color: white;
     overflow: hidden;
@@ -23,22 +24,18 @@
 }
 
 .card_title {
-    padding-top: 50px;
-    padding-left: 50px;
     line-height: 1.2;
 }
 
 .card_price {
-    padding-top: 30px;
-    padding-left: 50px;
+    margin-top: 30px;
     font-size: 40px;
     font-weight: bold;
 }
 
 .card_prop {
-    padding-top: 70px;
-    padding-left: 50px;
-    padding-bottom: 50px;
+    margin-top: 60px;
+    margin-bottom: 20px;
 }
 
 .card_red {
@@ -60,7 +57,7 @@
     position: absolute;
     width: 30px;
     top: 50px;
-    right: 40px;
+    right: 50px;
     fill: white;
 }
 
@@ -69,17 +66,18 @@
     content: '';
     position: absolute;
     width: 300px;
+    height: 300px;
     border-radius: 50%;
     background-color: white;
-    opacity: 0.2;
+    opacity: 0.1;
 }
 
 .card::after {
     right: -50px;
-
+    top: 100px;
 }
 
 .card::before {
     bottom: 90px;
-    right: -50px; 
+    right: -120px; 
 }
